@@ -7,6 +7,7 @@ function App() {
   return (
     <div class="container-fluid">
       <Header />
+      <div id="spacer" style={{minHeight: '100vh'}}></div>
     </div>
   )
 }

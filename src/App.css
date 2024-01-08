@@ -14,6 +14,9 @@
 
 body {
   background-color: #800D98;
+  min-width: 100vw;
+  max-width: 100vw;
+  min-height: 100vh;
 }
 
 /* removes the underline from the anchors, it looks better like this*/
@@ -60,7 +63,7 @@ a {
 /* Adds the profile image as a background to the containing div */
 
 .profile-img {
-  background-image: url(../images/ksd-profile-image.jpg);
+  background-image: url(/ksd-profile-image.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;

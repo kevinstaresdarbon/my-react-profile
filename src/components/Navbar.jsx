@@ -3,7 +3,7 @@ import personnelLogo from '/favicon.png';
 
 function Navbar(){
     return (
-        <nav class="navbar navbar-expand-md ms-auto nav-card-style" style="z-index: 6;">
+        <nav class="navbar navbar-expand-md ms-auto nav-card-style" style={{zIndex: 6}}>
             <div class="container-fluid">
                 <a class="navbar-brand me-1" href="#"><img src={personnelLogo} alt="purple personnel icon" width="32" height="32" /> </a>
                 <button class="navbar-toggler ms-1" type="button" data-bs-toggle="collapse"
