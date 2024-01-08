@@ -1,42 +1,157 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Adds the root variables for theming */
+
+:root {
+  --theme1: #2D060B;
+  --theme2: #92243D;
+  --theme3: #d4324a;
+  --theme4: #FBA7AA;
+  --theme5: #800D98;
+  --theme-radius: 8px;
+  --theme-border-style: 3px solid #d4324a;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Gives a nice purple background to the entire body */
+
+body {
+  background-color: #800D98;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* removes the underline from the anchors, it looks better like this*/
+
+a {
+  text-decoration: none;
+  color: var(--theme1)
+}
+
+/* These two groups add seperate hover effects for the links in the header and the links in the contact section*/
+
+#header a:hover {
+  color: var(--theme3)
+}
+
+
+#contact a:hover {
+  color: var(--theme5);
+}
+
+/* No longer used. was here to show the wireframe for the bootstrap grid */
+
+/* div {
+  border: 2px solid blue;
+} */
+
+/*  Styles the nav-cards in the header*/
+
+.nav-card-style {
+  border: var(--theme-border-style);
+  background-color: #FBA7AA;
+  border-radius: var(--theme-radius);
+  height: auto;
+}
+
+.fs-custom{
+  font-size: 1rem;
+}
+
+.navbar{
+  width: auto;
+}
+
+/* Adds the profile image as a background to the containing div */
+
+.profile-img {
+  background-image: url(../images/ksd-profile-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 240px;
+  width: 240px;
+  border: var(--theme-border-style);
+  border-radius: var(--theme-radius);
+}
+
+/* Controls the style for the cool subtitle */
+
+.cool-subtitle {
+  background-color: var(--theme5);
+  color: var(--theme4);
+  border: var(--theme-border-style);
+  border-radius: var(--theme-radius);
+  width: 20rem;
+}
+
+
+.hero{
+  width: calc(100% - 2rem);
+}
+
+.main-content-style {
+  border: var(--theme-border-style);
+  border-radius: var(--theme-radius);
+  color: var(--theme5);
+  background-color: var(--theme4);
+  width: calc(100% - 2rem);
+}
+
+/* Styles the background for the overlays on the cards */
+.custom-bg {
+  width: 8rem;
+  height: 12rem;
+  background-color: bisque;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  opacity: 0.8;
+}
+
+/* These two groups add the shadow effect as required */
+
+.shadow-effect {
+  transition: all 0.4s ease-in-out;
+  border: var(--theme-border-style);
+  border-radius: var(--theme-radius);
+}
+
+.shadow-effect:hover {
+  box-shadow:
+      inset 0px 0px 16px rgb(68, 14, 43),
+      0px 0px 23px rgb(46, 2, 26);
+}
+
+.accordion {
+  border: var(--theme-border-style);
+  border-radius: var(--theme-radius);
+}
+
+/* I had to use the !important rule here to maintain the styling on the button when the accordion opens below it */
+
+.accordion-button {
+  color: var(--theme5) !important;
+  background-color: var(--theme4) !important;
+}
+
+.accordion-body {
+  color: var(--theme5);
+  background-color: var(--theme4);
+}
+
+/*  This makes the contact bullet points disappear. stylistically better here*/
+
+ul li {
+  list-style: none;
+}
+
+/* Media query added here to make the site look better on mobile phones.  Gets rid of the annoying deadspace of purple down the rhs */
+
+@media only screen and (max-width: 460px) {
+  body {
+      max-width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  #hero{
+      min-width: 100%;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .card img{
+      min-width: 100%;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
