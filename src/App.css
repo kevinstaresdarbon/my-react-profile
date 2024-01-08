@@ -63,7 +63,6 @@ a {
 /* Adds the profile image as a background to the containing div */
 
 .profile-img {
-  background-image: url(/ksd-profile-image.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
