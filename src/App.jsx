@@ -6,10 +6,9 @@ import './App.css'
 function App() {
 
   return (
-    <div class="container-fluid">
+    <div class="container-fluid m-0 p-0 w-100">
       <Header />
       <Hero />
-      <div id="spacer" style={{minHeight: '100vh'}}></div>
     </div>
   )
 }

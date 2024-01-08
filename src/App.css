@@ -17,6 +17,7 @@ body {
   min-width: 100vw;
   max-width: 100vw;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 /* removes the underline from the anchors, it looks better like this*/
@@ -60,18 +61,6 @@ a {
   width: auto;
 }
 
-/* Adds the profile image as a background to the containing div */
-
-.profile-img {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  height: 240px;
-  width: 240px;
-  border: var(--theme-border-style);
-  border-radius: var(--theme-radius);
-}
-
 /* Controls the style for the cool subtitle */
 
 .cool-subtitle {
@@ -80,11 +69,6 @@ a {
   border: var(--theme-border-style);
   border-radius: var(--theme-radius);
   width: 20rem;
-}
-
-
-.hero{
-  width: calc(100% - 2rem);
 }
 
 .main-content-style {
