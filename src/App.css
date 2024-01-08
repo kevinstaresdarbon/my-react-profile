@@ -13,13 +13,17 @@
 /* Gives a nice purple background to the entire body */
 
 body {
-  background-color: #800D98;
   min-width: 100vw;
   max-width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
+  
 }
 
+#root{
+  background-color: #800D98;
+
+}
 /* removes the underline from the anchors, it looks better like this*/
 
 a {
@@ -81,7 +85,7 @@ a {
   border-radius: var(--theme-radius);
   color: var(--theme5);
   background-color: var(--theme4);
-  width: calc(100% - 2rem);
+  max-width: calc(100vw - 56px)
 }
 
 /* Styles the background for the overlays on the cards */

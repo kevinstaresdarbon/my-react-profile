@@ -13,7 +13,7 @@ function Navbar(){
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link fs-custom" aria-current="page" href="#about">About</a>
+                        <a class="nav-link fs-custom" aria-current="page" href="#home">Home</a>
                         <a class="nav-link fs-custom" href="#skills">Skills</a>
                         <a class="nav-link fs-custom" href="#work">Work</a>
                         <a class="nav-link fs-custom" href="#contact">Contact</a>
