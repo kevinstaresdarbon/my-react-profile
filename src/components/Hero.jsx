@@ -15,7 +15,7 @@ function Hero() {
                             <div class="col-4 p-0">
                             </div>
                             <div class="col-4 p-0 d-flex flex-column align-items-center">
-                                <img src={ksdProfilePNG} style={{ objectFit: 'cover', width: '240px', height: '240px' }} class="mt-3 mb-4" />
+                                <img src={ksdProfilePNG} style={{ objectFit: 'cover', width: '240px', height: '240px', borderRadius: 'var(--theme-radius)', border: 'var(--theme-border-style)' }} class="mt-3 mb-4" />
                                 <p class="cool-subtitle fs-2 px-2 m-0 ml-2 text-center"> Kevin Stares-Darbon </p>
                             </div>
                         </div>

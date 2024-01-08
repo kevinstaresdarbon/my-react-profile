@@ -53,6 +53,11 @@ a {
   height: auto;
 }
 
+.profile-style {
+  border: var(--theme-border-style);
+  border-radius: var(--theme-radius);
+}
+
 .fs-custom{
   font-size: 1rem;
 }
