@@ -15,6 +15,7 @@ function Projects() {
         {
             id: 1,
             link: 'https://kevinstaresdarbon.github.io/NoFOMO/',
+            git: 'https://github.com/kevinstaresdarbon/NoFOMO',
             img: nofomoImg,
             imgAlt: 'An online search and dashboard for planning activities',
             overlayTitle: 'NoFOMO',
@@ -24,7 +25,8 @@ function Projects() {
         },
         {
             id: 2,
-            link: 'tba',
+            link: 'tba', 
+            git: 'tba',
             img: 'tba',
             imgAlt: 'tba',
             overlayTitle: 'tba',
@@ -38,6 +40,7 @@ function Projects() {
         {
             id: 3,
             link: 'https://kevinstaresdarbon.github.io/SimonGame/',
+            git: 'https://github.com/kevinstaresdarbon/SimonGame',
             img: gameImg,
             imgAlt: 'Four primary coloured squares of Simon the Wizard Game',
             overlayTitle: "Simon's Game",
@@ -48,6 +51,7 @@ function Projects() {
         {
             id: 4,
             link: 'https://kevinstaresdarbon.github.io/PW-Gen',
+            git: 'https://github.com/kevinstaresdarbon/PW-Gen',
             img: pwImg,
             imgAlt: 'A simple html form with sliders and checkboxes',
             overlayTitle: 'Password Generator',
@@ -57,7 +61,8 @@ function Projects() {
         },
         {
             id: 5,
-            link: 'https://kevinstaresdarbon.github.io/Quiz/index.html',
+            link: 'https://kevinstaresdarbon.github.io/Quiz/index.html',   
+            git: 'https://github.com/kevinstaresdarbon/Quiz',
             img: quizImg,
             imgAlt: 'Interactive multiple choice quiz',
             overlayTitle: 'Interactive JS Quiz',
@@ -68,6 +73,7 @@ function Projects() {
         {
             id: 6,
             link: 'https://kevinstaresdarbon.github.io/Planner',
+            git: 'https://github.com/kevinstaresdarbon/Planner',
             img: plannerImg,
             imgAlt: 'Interactive Daily Diary',
             overlayTitle: 'Interactive Daily Planner',
@@ -78,6 +84,7 @@ function Projects() {
         {
             id: 7,
             link: 'https://kevinstaresdarbon.github.io/Weather-Search/',
+            git: 'https://github.com/kevinstaresdarbon/Weather-Search',
             img: weatherImg,
             imgAlt: 'API Search for weather information',
             overlayTitle: 'API Weather',
@@ -92,8 +99,10 @@ function Projects() {
         <section id="work" className="container-fluid p-0 mx-4 my-3 w-100 main-content-style">
             <section className="row p-4" id="projects">
                 {/* <!--  These column classes give the best fit for responsiveness given the site design--> */}
-                <div className="col-12  d-flex justify-content-center">
+                <div className="col-12  d-flex flex-column justify-content-center align-items-center ">
                     <p className="fs-1 fw-bold">Projects</p>
+                    <p className="fs-3 fw-bold w-75 text-center">Below you will find links to my most recent projects that I have been working on and their respective public repositories, all hosted on github.</p>
+                    <br />
                 </div>
 
                 {/* map over projects here */}
@@ -101,7 +110,7 @@ function Projects() {
                     .filter(project => (project.isFeatured === true))
                     .map(featured => (
                         <div className="col-12 mb-4" key={featured.id}>
-                            <Project link={featured.link} img={featured.img} imgAlt={featured.imgAlt} overlayTitle={featured.overlayTitle} overlayContent={featured.overlayContent} isFeatured={featured.isFeatured} />
+                            <Project link={featured.link} git={featured.git} img={featured.img} imgAlt={featured.imgAlt} overlayTitle={featured.overlayTitle} overlayContent={featured.overlayContent} isFeatured={featured.isFeatured} />
                         </div>
                     ))
                 }
@@ -110,7 +119,7 @@ function Projects() {
                     .filter(project => (project.isFeatured === true))
                     .map(featured =>
                     (<div className="col-12" key={featured.id}>
-                        <Project link={featured.link} img={featured.img} imgAlt={featured.imgAlt} overlayTitle={featured.overlayTitle} overlayContent={featured.overlayContent} isFeatured={featured.isFeatured} />
+                        <Project link={featured.link} git={featured.git} img={featured.img} imgAlt={featured.imgAlt} overlayTitle={featured.overlayTitle} overlayContent={featured.overlayContent} isFeatured={featured.isFeatured} />
                     </div>
                     ))
                 }
@@ -125,7 +134,7 @@ function Projects() {
                                     .filter(project => (project.isFeatured === false))
                                     .map(notfeatured => (
                                         <div className="col-12 col-lg-6 col-xxl-3 mb-3" key={notfeatured.id}>
-                                            <Project link={notfeatured.link} img={notfeatured.img} imgAlt={notfeatured.imgAlt} overlayTitle={notfeatured.overlayTitle} overlayContent={notfeatured.overlayContent} isFeatured={notfeatured.isFeatured} />
+                                            <Project link={notfeatured.link} git={notfeatured.git} img={notfeatured.img} imgAlt={notfeatured.imgAlt} overlayTitle={notfeatured.overlayTitle} overlayContent={notfeatured.overlayContent} isFeatured={notfeatured.isFeatured} />
                                         </div>
                                     ))
                                 }
