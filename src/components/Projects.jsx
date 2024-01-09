@@ -13,6 +13,7 @@ function Projects() {
 
     const projectData = [
         {
+            id: 1,
             link: 'https://kevinstaresdarbon.github.io/NoFOMO/',
             img: nofomoImg,
             imgAlt: 'An online search and dashboard for planning activities',
@@ -22,6 +23,7 @@ function Projects() {
             isFeatured: true
         },
         {
+            id: 2,
             link: 'tba',
             img: 'tba',
             imgAlt: 'tba',
@@ -34,6 +36,7 @@ function Projects() {
 
     const challengeData = [
         {
+            id: 3,
             link: 'https://kevinstaresdarbon.github.io/SimonGame/',
             img: gameImg,
             imgAlt: 'Four primary coloured squares of Simon the Wizard Game',
@@ -43,6 +46,7 @@ function Projects() {
             isFeatured: true
         },
         {
+            id: 4,
             link: 'https://kevinstaresdarbon.github.io/PW-Gen',
             img: pwImg,
             imgAlt: 'A simple html form with sliders and checkboxes',
@@ -52,6 +56,7 @@ function Projects() {
             isFeatured: false
         },
         {
+            id: 5,
             link: 'https://kevinstaresdarbon.github.io/Quiz/index.html',
             img: quizImg,
             imgAlt: 'Interactive multiple choice quiz',
@@ -61,6 +66,7 @@ function Projects() {
             isFeatured: false
         },
         {
+            id: 6,
             link: 'https://kevinstaresdarbon.github.io/Planner',
             img: plannerImg,
             imgAlt: 'Interactive Daily Diary',
@@ -70,6 +76,7 @@ function Projects() {
             isFeatured: false
         },
         {
+            id: 7,
             link: 'https://kevinstaresdarbon.github.io/Weather-Search/',
             img: weatherImg,
             imgAlt: 'API Search for weather information',
@@ -93,7 +100,7 @@ function Projects() {
                 {projectData
                     .filter(project => (project.isFeatured === true))
                     .map(featured => (
-                        <div className="col-12 mb-4">
+                        <div className="col-12 mb-4" key={featured.id}>
                             <Project link={featured.link} img={featured.img} imgAlt={featured.imgAlt} overlayTitle={featured.overlayTitle} overlayContent={featured.overlayContent} isFeatured={featured.isFeatured} />
                         </div>
                     ))
@@ -102,7 +109,7 @@ function Projects() {
                 {challengeData
                     .filter(project => (project.isFeatured === true))
                     .map(featured =>
-                    (<div className="col-12">
+                    (<div className="col-12" key={featured.id}>
                         <Project link={featured.link} img={featured.img} imgAlt={featured.imgAlt} overlayTitle={featured.overlayTitle} overlayContent={featured.overlayContent} isFeatured={featured.isFeatured} />
                     </div>
                     ))
@@ -117,7 +124,7 @@ function Projects() {
                                 {challengeData
                                     .filter(project => (project.isFeatured === false))
                                     .map(notfeatured => (
-                                        <div className="col-12 col-lg-6 col-xxl-3 mb-3">
+                                        <div className="col-12 col-lg-6 col-xxl-3 mb-3" key={notfeatured.id}>
                                             <Project link={notfeatured.link} img={notfeatured.img} imgAlt={notfeatured.imgAlt} overlayTitle={notfeatured.overlayTitle} overlayContent={notfeatured.overlayContent} isFeatured={notfeatured.isFeatured} />
                                         </div>
                                     ))
