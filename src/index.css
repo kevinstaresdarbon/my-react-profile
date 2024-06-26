@@ -13,6 +13,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face{
+  font-family:Playfair;
+  src: url(assets/PlayfairDisplay-VariableFont_wght.ttf)
+}
+
 a {
   font-weight: 500;
   color: #646cff;

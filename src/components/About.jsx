@@ -5,11 +5,11 @@ function About() {
         <section className="row" id="about" style={{minHeight: '8rem'}}>
             <div className="col-12">
                 {/* <!--  These column classes give the best fit for responsiveness given the site design--> */}
-                <div className="row" style={{ minHeight: '8rem' }}>
+                <div className="row  mt-4 px-2" style={{ minHeight: '8rem' }}>
                     <div className="col-12 col-sm-2 d-flex justify-content-center">
-                        <p className="fs-1 fw-bold">About</p>
+                        <p className="fs-1 fw-bold align-self-center">About</p>
                     </div>
-                    <div className="col-12 col-sm-10 mb-5" style={{ minHeight: '8rem' }}>
+                    <div className="col-12 col-sm-10 mb-3" style={{ minHeight: '8rem' }}>
                         <p></p>
                         <p className="fs-4 fw-bold px-2"> Welcome to my Online Profile!</p>
                         <p className="fs-4 fw-bold px-2"> I am an enthusiastic hobbyist who is turning his passion into his career.

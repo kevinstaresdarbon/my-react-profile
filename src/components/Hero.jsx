@@ -1,6 +1,6 @@
 import React from 'react';
-import heroPNG from '/02-hero-bg.png';
-import ksdProfilePNG from '/ksd-profile-image.png';
+import heroPNG from '/02-hero-bg-min.png';
+import ksdProfilePNG from '/profile-min.jpg';
 
 function Hero() {
     return (
@@ -15,8 +15,8 @@ function Hero() {
                             <div className="col-4 p-0">
                             </div>
                             <div className="col-4 p-0 d-flex flex-column align-items-center">
-                                <img src={ksdProfilePNG} style={{ objectFit: 'cover', width: '240px', height: '240px', borderRadius: 'var(--theme-radius)', border: 'var(--theme-border-style)' }} className="mt-4 mb-3" />
-                                <p className="cool-subtitle fs-2 px-2 m-0 ml-2 text-center"> Kevin Stares-Darbon </p>
+                                <img src={ksdProfilePNG} style={{ objectFit: 'cover', objectPosition: '0px 0px', width: '280px', height: '260px', borderRadius: 'var(--theme-radius)', border: 'var(--theme-border-style)' }} className="mt-4 mb-2" />
+                                <p className="cool-subtitle fs-3 px-2 m-0 ml-2 text-center"> Kevin Stares-Darbon </p>
                             </div>
                         </div>
                     </div>

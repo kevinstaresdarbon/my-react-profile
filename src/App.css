@@ -135,6 +135,13 @@ ul li {
   list-style: none;
 }
 
+.nav-hover-text{
+  color: var(--theme3);
+}
+
+.nav-hover-text:hover{
+  color: var(--theme5);
+}
 /* Media query added here to make the site look better on mobile phones.  Gets rid of the annoying deadspace of purple down the rhs */
 
 @media only screen and (max-width: 460px) {

@@ -9,7 +9,7 @@ function App() {
 
   return (
     <Router basename='/my-react-profile'>
-      <div className="container-fluid m-0 p-0 w-100" style={{minHeight: '100vh'}}>
+      <div className="container-fluid m-0 p-0 w-100" style={{minHeight: '100vh', fontFamily: 'Playfair'}}>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />

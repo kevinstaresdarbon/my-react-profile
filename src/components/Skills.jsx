@@ -5,13 +5,13 @@ function Skills() {
     return (
         <section className="row" id="skills" style={{minHeight: '8rem'}}>
             <div className="col-12 p-0">
-                <div className="row" style={{minHeight: '8rem'}}>
+                <div className="row  mb-5" style={{minHeight: '8rem'}}>
                     <div className="col-12 col-sm-2 d-flex justify-content-center">
-                        <p className="fs-1 fw-bold">Skills</p>
+                        <p className="fs-1 fw-bold align-self-center">Skills</p>
                     </div>
                     <div className="col-12 col-sm-10 p-5">
                         {/* <!-- Copied wholesale and adapted from the getbootstrap.com docs accordion element "always open"--> */}
-                        <div className="accordion mb-5" id="open-accordion">
+                        <div className="accordion mb-3" id="open-accordion">
                         <div className="accordion-item">
                                 <h2 className="accordion-header">
                                     <button className="accordion-button collapsed fs-4 fw-bold" type="button"
