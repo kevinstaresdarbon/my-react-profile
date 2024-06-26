@@ -8,11 +8,23 @@ import plannerImg from '/planner.png';
 import weatherImg from '/Weather.png';
 import gameImg from '/simon-game.jpg';
 import nofomoImg from '/NoFOMO.png';
+import pursuitImg from '/pursuit-of-wits.netlify.app_play.png';
 
 function Projects() {
   const projectData = [
     {
       id: 1,
+      link: 'https://pursuit-of-wits.netlify.app/',
+      git: 'https://github.com/annabrisland/pursuit-of-wits',
+      img: pursuitImg,
+      imgAlt: 'A colourful gameboard for pursuit of wits',
+      overlayTitle: 'Pursuit of Wits',
+      overlayContent: 'An interactive quiz game to play with friends',
+      ignore: false,
+      isFeatured: true,
+    },
+    {
+      id: 2,
       link: 'https://kevinstaresdarbon.github.io/NoFOMO/',
       git: 'https://github.com/kevinstaresdarbon/NoFOMO',
       img: nofomoImg,
@@ -22,17 +34,6 @@ function Projects() {
         "You'll have No Fear of Missing Out with this online tool",
       ignore: false,
       isFeatured: true,
-    },
-    {
-      id: 2,
-      link: 'tba',
-      git: 'tba',
-      img: 'tba',
-      imgAlt: 'tba',
-      overlayTitle: 'tba',
-      overlayContent: 'tba',
-      ignore: true,
-      isFeatured: false,
     },
   ];
 
@@ -46,7 +47,7 @@ function Projects() {
       overlayTitle: "Simon's Game",
       overlayContent: 'Enjoy this throwback to the sequence memory game',
       ignore: false,
-      isFeatured: true,
+      isFeatured: false,
     },
     {
       id: 4,
@@ -90,7 +91,7 @@ function Projects() {
       imgAlt: 'API Search for weather information',
       overlayTitle: 'API Weather',
       overlayContent: 'Current weather conditions for a given location',
-      ignore: false,
+      ignore: true,
       isFeatured: false,
     },
   ];
@@ -162,9 +163,13 @@ function Projects() {
                 {/* map over challenges here */}
                 {challengeData
                   .filter((project) => project.isFeatured === false)
+                  .filter((project) => project.ignore === false)
                   .map((notfeatured) => (
                     <>
-                      <div className="col-12 col-sm-6 mb-3" key={notfeatured.id}>
+                      <div
+                        className="col-12 col-sm-6 mb-3"
+                        key={notfeatured.id}
+                      >
                         <Project
                           link={notfeatured.link}
                           git={notfeatured.git}
