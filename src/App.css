@@ -77,7 +77,8 @@ a {
   color: var(--theme4);
   border: var(--theme-border-style);
   border-radius: var(--theme-radius);
-  width: 20rem;
+  width: 17rem;
+  font-weight: 800;
 }
 
 .main-content-style {
@@ -85,7 +86,7 @@ a {
   border-radius: var(--theme-radius);
   color: var(--theme5);
   background-color: var(--theme4);
-  max-width: calc(100vw - 56px)
+  max-width: 100%;
 }
 
 /* Styles the background for the overlays on the cards */
@@ -93,7 +94,6 @@ a {
   width: 8rem;
   height: 12rem;
   background-color: bisque;
-  margin: 0.5rem;
   padding: 0.5rem;
   opacity: 0.8;
 }
@@ -122,6 +122,7 @@ a {
 .accordion-button {
   color: var(--theme5) !important;
   background-color: var(--theme4) !important;
+  text-align: center !important;
 }
 
 .accordion-body {
@@ -136,11 +137,15 @@ ul li {
 }
 
 .nav-hover-text{
-  color: var(--theme3);
+  color: var(--theme2);
 }
 
 .nav-hover-text:hover{
   color: var(--theme5);
+}
+
+accordion-button{
+  text-align: center;
 }
 /* Media query added here to make the site look better on mobile phones.  Gets rid of the annoying deadspace of purple down the rhs */
 

@@ -97,14 +97,24 @@ function Projects() {
   ];
 
   return (
-    <section
+    <main
       id="work"
-      className="container-fluid p-0 mx-4 my-3 w-100 main-content-style"
+      className="col-11 p-0 mx-0 my-3 main-content-style"
     >
+      <section className="row p-4" id="portfolio">
+      <div className="col-12  d-flex flex-column justify-content-center align-items-center ">
+          <h1 className="fs-1 fw-bold">Portfolio</h1>
+          <p className="fs-3 fw-bold w-75 text-center">
+            In this section you will find links to my existing works published live on the internet for private clients.
+          </p>
+          <br />
+        </div>
+
+      </section>
       <section className="row p-4" id="projects">
         {/* <!--  These column classes give the best fit for responsiveness given the site design--> */}
         <div className="col-12  d-flex flex-column justify-content-center align-items-center ">
-          <p className="fs-1 fw-bold">Projects</p>
+          <h1 className="fs-1 fw-bold">Projects</h1>
           <p className="fs-3 fw-bold w-75 text-center">
             Below you will find links to my most recent projects that I have
             been working on and their respective public repositories, all hosted
@@ -119,7 +129,7 @@ function Projects() {
           .map((featured) => (
             <>
               <div className="col-0 col-sm-1 col-lg-2"></div>
-              <div className="col-12 col-sm-10 col-lg-8 mb-4" key={featured.id}>
+              <div className="col-12 col-sm-10 col-lg-8 mb-1" key={featured.id}>
                 <Project
                   link={featured.link}
                   git={featured.git}
@@ -167,7 +177,7 @@ function Projects() {
                   .map((notfeatured) => (
                     <>
                       <div
-                        className="col-12 col-sm-6 mb-3"
+                        className="col-12 col-lg-6 mb-3"
                         key={notfeatured.id}
                       >
                         <Project
@@ -188,7 +198,7 @@ function Projects() {
         </div>
         <div className="col-0 col-sm-1 col-lg-2"></div>
       </section>
-    </section>
+    </main>
   );
 }
 
